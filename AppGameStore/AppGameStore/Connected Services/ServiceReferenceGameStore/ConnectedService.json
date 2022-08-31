@@ -1,0 +1,36 @@
+{
+  "ExtendedData": {
+    "inputs": [
+      "http://192.168.1.178:64946/GameStoreService.svc"
+    ],
+    "collectionTypes": [
+      "System.Collections.Generic.Dictionary`2",
+      "System.Collections.Generic.List`1"
+    ],
+    "messageContract": true,
+    "namespaceMappings": [
+      "*, ServiceReferenceGameStore"
+    ],
+    "references": [
+      "System.Numerics.Vectors, {System.Numerics.Vectors, 4.5.0}",
+      "System.Reflection.DispatchProxy, {System.Reflection.DispatchProxy, 4.5.0}",
+      "System.Security.AccessControl, {System.Security.AccessControl, 4.5.0}",
+      "System.Security.Cryptography.Xml, {System.Security.Cryptography.Xml, 4.5.0}",
+      "System.Security.Permissions, {System.Security.Permissions, 4.5.0}",
+      "System.Security.Principal.Windows, {System.Security.Principal.Windows, 4.5.0}",
+      "System.ServiceModel, {System.ServiceModel.Primitives, 4.6.0}",
+      "System.ServiceModel.Duplex, {System.ServiceModel.Duplex, 4.6.0}",
+      "System.ServiceModel.Http, {System.ServiceModel.Http, 4.6.0}",
+      "System.ServiceModel.NetTcp, {System.ServiceModel.NetTcp, 4.6.0}",
+      "System.ServiceModel.Primitives, {System.ServiceModel.Primitives, 4.6.0}",
+      "System.ServiceModel.Security, {System.ServiceModel.Security, 4.6.0}",
+      "Xamarin.Essentials, {Xamarin.Essentials, 1.7.0}",
+      "Xamarin.Forms.Core, {Xamarin.Forms, 5.0.0.2196}",
+      "Xamarin.Forms.Platform, {Xamarin.Forms, 5.0.0.2196}",
+      "Xamarin.Forms.Xaml, {Xamarin.Forms, 5.0.0.2196}"
+    ],
+    "sync": true,
+    "targetFramework": "netstandard2.1",
+    "typeReuseMode": "All"
+  }
+}

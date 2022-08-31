@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGameStore.Views.NewCategoryPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Name" FontSize="Medium" />
+            <Editor Text="{Binding Name, Mode=TwoWay}" FontSize="Medium"/>
+            <Label Text="Short description" FontSize="Medium" />
+            <Editor Text="{Binding ShortDescription, Mode=TwoWay}" FontSize="Medium"/>
+            <Label Text="Notes" FontSize="Medium" />
+            <Editor Text="{Binding Notes, Mode=TwoWay}" FontSize="Medium"/>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a9a3fc72b66f4bc4811bd7d43a8caead" Name="Diagram1">
+        <EntityTypeShape EntityType="GameStoreModel.Category" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameStoreModel.Customer" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameStoreModel.Employee" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameStoreModel.Game" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameStoreModel.GameType" Width="1.5" PointX="5.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameStoreModel.Order" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameStoreModel.OrderDetail" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameStoreModel.PaymentMethod" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameStoreModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="GameStoreModel.FK_GameType_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="GameStoreModel.FK_Order_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="GameStoreModel.FK_Order_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="GameStoreModel.FK_GameType_Game" ManuallyRouted="false" />
+        <AssociationConnector Association="GameStoreModel.FK_OrderDetail_Game" ManuallyRouted="false" />
+        <AssociationConnector Association="GameStoreModel.FK_Order_PaymentMethod" ManuallyRouted="false" />
+        <AssociationConnector Association="GameStoreModel.FK_OrderDetail_Order" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

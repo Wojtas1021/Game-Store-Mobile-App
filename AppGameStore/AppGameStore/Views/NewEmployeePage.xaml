@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGameStore.Views.NewEmployeePage">
+    <ContentPage.Content>
+        <StackLayout Spacing="3" Padding="15">
+            <Label Text="Name" FontSize="Medium" />
+            <Editor Text="{Binding Name, Mode=TwoWay}" FontSize="Medium"/>
+            <Label Text="Surname" FontSize="Medium" />
+            <Editor Text="{Binding Surname, Mode=TwoWay}" FontSize="Medium"/>
+            <Label Text="Email" FontSize="Medium" />
+            <Editor Text="{Binding Email, Mode=TwoWay}" FontSize="Medium"/>
+            <Label Text="Phone" FontSize="Medium" />
+            <Editor Text="{Binding Phone, Mode=TwoWay}" FontSize="Medium"/>
+            <Label Text="Department" FontSize="Medium" />
+            <Editor Text="{Binding Department, Mode=TwoWay}" FontSize="Medium"/>
+            <Label Text="Login" FontSize="Medium" />
+            <Editor Text="{Binding Login, Mode=TwoWay}" FontSize="Medium"/>
+            <Label Text="Password" FontSize="Medium" />
+            <Entry Text="{Binding Password, Mode=TwoWay}" IsPassword="True"/>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

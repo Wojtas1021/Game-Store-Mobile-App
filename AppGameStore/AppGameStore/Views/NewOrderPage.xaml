@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGameStore.Views.NewOrderPage"
+             Shell.PresentationMode="ModalAnimated"
+             Title="New Order"
+             >
+    <ContentPage.Content>
+        <StackLayout Spacing="3" Padding="15">
+            <Label Text="Order Number" FontSize="Medium" />
+            <Editor Text="{Binding OrderNumber, Mode=TwoWay}" FontSize="Medium"/>
+            <Label Text="Data Order" FontSize="Medium" />
+            <DatePicker Date="{Binding OrderDate, Mode=TwoWay}" FontSize="Medium"/>
+            <Label Text="Modified Date" FontSize="Medium" />
+            <DatePicker Date="{Binding ModifiedDate, Mode=TwoWay}" FontSize="Medium"/>
+            <Picker Title="Select Customer" ItemsSource="{Binding Customers}" ItemDisplayBinding="{Binding Name}" SelectedItem="{Binding SelectedCustomer}" FontSize="Medium" Margin="0" />
+            <Picker Title="Select Employee" ItemsSource="{Binding Employees}" ItemDisplayBinding="{Binding Login}" SelectedItem="{Binding SelectedEmployee}" FontSize="Medium" Margin="0" />
+           <!-- <Picker Title="Payment Method" ItemsSource="{Binding PaymentMethods}" ItemDisplayBinding="{Binding Name}" SelectedItem="{Binding SelectedPaymentMethod}" FontSize="Medium" Margin="0" />
+            -->
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

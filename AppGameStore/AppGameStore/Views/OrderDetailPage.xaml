@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGameStore.Views.OrderDetailPage">
+    <ContentPage.Content>
+        <StackLayout Spacing="3" Padding="15">
+            <Label Text="Date from" FontSize="Medium" />
+            <DatePicker Date="{Binding OrderDate, Mode=TwoWay}" FontSize="Medium"/>
+            <Label Text="Date to" FontSize="Medium" />
+            <DatePicker Date="{Binding ModifiedDate, Mode=TwoWay}" FontSize="Medium"/>
+            <Picker Title="Select Game" ItemsSource="{Binding Games}" 
+                    ItemDisplayBinding="{Binding Title}" SelectedItem="{Binding SelectedGame}" FontSize="Medium" Margin="0" />
+            <Picker Title="Select Employee" ItemsSource="{Binding Employees}" 
+                    ItemDisplayBinding="{Binding Login}" SelectedItem="{Binding SelectedEmployee}" FontSize="Medium" Margin="0" />
+            <StackLayout Orientation="Horizontal">
+                <StackLayout BackgroundColor="Azure"  Margin="4">
+                    <Label Text="Sales report for Game: " HorizontalOptions="Center"/>
+                    <Label Text="{Binding SalesReportForGame, Mode=TwoWay}" HorizontalOptions="Center"/>
+                    <Button Text="Report for game" Command="{Binding SalesReportForGameCommand}" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+                <StackLayout BackgroundColor="Azure"  Margin="4">
+                    <Label Text="Value of all orders: " HorizontalOptions="Center"/>
+                    <Label Text="{Binding OrderValueOfWorker, Mode=TwoWay}" HorizontalOptions="Center"/>
+                    <Button Text="Worker orders" Command="{Binding OrderValueOfWorkerCommand}" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+                <StackLayout BackgroundColor="Azure"  Margin="4">
+                    <Label Text="Sales report: " HorizontalOptions="Center"/>
+                    <Label Text="{Binding SalesReport, Mode=TwoWay}" HorizontalOptions="Center"/>
+                    <Button Text="Sales report " Command="{Binding SalesReportCommand}" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
